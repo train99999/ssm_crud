@@ -107,6 +107,7 @@
     where emp_id = #{empId,jdbcType=INTEGER}
   </select>
   <!--查询员工不带部门信息-->
+  <!--查询员工不带部门信息-->
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.train.crud.bean.EmployeeExample">
     select
     <if test="distinct">

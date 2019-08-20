@@ -42,11 +42,14 @@ public class MapperTest {
         EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
         for(int i=0;i<100;i++){
             if(i % 3 == 0){
-            mapper.insertSelective(new Employee(null,"寒冰","F","hanbing@qq.com",3));
+            mapper.insertSelective(new Employee(null,"寒冰射手","F","hanbing@qq.com",1));
+            mapper.insertSelective(new Employee(null,"熔岩巨兽","M","rongyan@qq.com",1));
             }else if (i % 3 == 1){
-                mapper.insertSelective(new Employee(null,"剑圣","M","jiansheng@qq.com",4));
+            mapper.insertSelective(new Employee(null,"无极剑圣","M","jiansheng@qq.com",2));
+            mapper.insertSelective(new Employee(null,"提莫队长","F","timo@qq.com",1));
             }else {
-                mapper.insertSelective(new Employee(null,"婕拉","F","jiela@qq.com",4));
+            mapper.insertSelective(new Employee(null,"光辉女郎","F","guanghui@qq.com",1));
+            mapper.insertSelective(new Employee(null,"刀锋之影","F","daofeng@qq.com",1));
             }
         }
     }

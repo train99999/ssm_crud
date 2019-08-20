@@ -2,7 +2,6 @@ package com.train.crud.bean;
 
 import java.util.HashMap;
 import java.util.Map;
-
 public class Msg {
     //状态码
     private int code;
@@ -10,7 +9,6 @@ public class Msg {
     private String msg;
     //用户要返回给浏览器的数据
     private Map<String,Object> extend = new HashMap<String,Object>();
-
 
     public static Msg success(){
         Msg result = new Msg();

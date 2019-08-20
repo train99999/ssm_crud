@@ -26,6 +26,8 @@
     <mvc:resources location="/css" mapping="/css/**"/>
     <mvc:resources location="/images" mapping="/images/**"/>
     <mvc:resources location="/js/" mapping="/js/**"/>
+
+
 <!--    两个标准配置-->
 <!--    springmvc不能处理的请求交给tomcat-->
     <mvc:default-servlet-handler></mvc:default-servlet-handler>
